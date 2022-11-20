@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right, #de6161,#2657eb);
+}
+
+#s1{
+    background: linear-gradient(#8a2387,#e94057,#f27121);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(130px at 40% 70%);
+}
+
+#s2{
+    background: linear-gradient(#5614b0,#dbd65c);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(130px at 60% 24%);
+}
+
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator{
+    position: absolute;
+    display: grid;
+    min-width: 27%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5),
+                -2px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.calculator h2{
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    grid-column: span 4;
+    overflow: none;
+    position: relative;
+    text-align: end;
+    user-select: none;
+    line-height: 100px;
+    margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor:text;
+}
+
+.calculator span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    min-width: 50px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.calculator span:hover{
+    background-color: #fff;
+    color: #0f2027;
+}
+
+.calculator #plus{
+    grid-row: span 2;
+}
+
+.calculator #equal{
+    grid-column: span 2;
+}
