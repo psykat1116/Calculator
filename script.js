@@ -12,6 +12,20 @@ for(let i=0;i<btn.length;i++)
         else if(this.innerHTML == "Clear"){
             value.innerHTML = "";
         }
+        else if(this.innerHTML == "DEL"){
+            let str=value.innerHTML;
+            value.innerHTML = str.substring(0,str.length-1);
+        }
+        else if(this.innerHTML == "√x"){
+            let str=value.innerHTML;
+            let val=parseInt(str);
+            value.innerHTML = Math.sqrt(val);
+        }
+        else if(this.innerHTML == `x<sup>2</sup>`){
+            let str=value.innerHTML;
+            let val=parseInt(str);
+            value.innerHTML = Math.pow(val,2);
+        }
         else{
             value.innerHTML+=this.innerHTML;
         }
